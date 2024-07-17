@@ -1,0 +1,142 @@
+body {
+  background-image: url("./assets/main-page-background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* Optional: keeps the background fixed on scroll */
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.main-page {
+  position: absolute;
+  width: 70%;
+  height: 60%;
+  background-color: hwb(0 14% 85% / 0.938);
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 30px;
+  display: flex;
+}
+
+.left-main-page {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: rgb(74, 151, 151);
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+}
+
+.left-main-page button {
+  width: 60%;
+  height: 10%;
+  border: 1px solid rgba(255, 245, 245, 0.37);
+  border-radius: 20px;
+  font-size: 20px;
+  background-color: rgb(46, 104, 136);
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+.left-main-page button:hover {
+  transform: scale(1.1);
+
+}
+
+.user-info {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  color: white;
+  height: 50%;
+}
+
+.user-info img {
+  width: 250px;
+}
+
+.user-info > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 60%;
+  width: 40%;
+}
+
+.user-info input {
+  height: 80px;
+  font-size: 20px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+
+}
+
+.right-main-page {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  border-left: 1px solid rgb(155, 155, 155);
+  background-color: #96ac65;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
+.right-main-page button {
+  width: 70%;
+  height: 10%;
+  border: none;
+  border-radius: 20px;
+  font-size: 20px;
+  background-color: rgb(255, 255, 255);
+  color: rgb(46, 44, 44);
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+.right-main-page button:hover {
+  transform: scale(1.1);
+}
+
+.right-main-page button:disabled {
+  background-color: rgb(129, 123, 123);
+  color: white;
+  cursor: not-allowed;
+}
+
+
+#change-avatar {
+  position: absolute;
+  width: 10%;
+  height: 20%;
+  font-size: 40px;
+  left: 220px;
+  top: 220px;
+  background-color: #96ac65;
+}
+
+@keyframes shake {
+  0% { transform: translateY(0); }
+  25% { transform: translateY(-20px); }
+  50% { transform: translateY(20px); }
+  75% { transform: translateY(-20px); }
+  100% { transform: translateY(0); }
+}
+
+
+.shake {
+  animation: shake 0.5s;
+}

@@ -1,0 +1,88 @@
+.create-room-container {
+  position: absolute;
+  width: 70%;
+  height: 60%;
+  background-color: #96ac65;
+  color: white;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.top {
+  height: 15%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-color: rgb(74, 151, 151);
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+}
+
+.userinfo {
+  display: flex;
+  word-break: break-all;
+  width: 20%;
+  border-right: 1px solid white;
+  overflow: hidden; /* Ensure the container hides overflowing content */
+  text-overflow: ellipsis; /* Add ellipsis when the text overflows */
+  white-space: nowrap; /* Prevent text from wrapping to the next line */
+}
+
+.userinfo img {
+  width: 100px;
+}
+
+.title {
+  width: 70%;
+  display: flex;
+  justify-content: center;
+}
+
+.title h1 {
+  width: 30%;
+}
+
+.top button {
+  width: 5%;
+  height: 50%;
+  border: none;
+  background-color: rgb(74, 151, 151);
+  color: rgb(255, 255, 255);
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.top button:hover {
+  transform: scale(1.2);
+}
+
+.middle {
+  height: 70%;
+  width: 100%;
+  display: flex;
+  padding-top: 30px;
+  justify-content: space-around
+}
+
+
+.bottom {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  justify-content: center;
+}
+
+.bottom button {
+  width: 30%;
+  height: 80%;
+  border: none;
+  border-radius: 40px;
+  font-size: 20px;
+  color: white;
+  cursor: pointer;
+  background-image: linear-gradient(to right,rgb(74, 151, 151) , #d3349e);
+}

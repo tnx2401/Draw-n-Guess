@@ -1,0 +1,45 @@
+.join-room-container {
+  position: absolute;
+  width: 70%;
+  height: 60%;
+  background-color: #96ac65;
+  color: white;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+
+.join-room-container h2 {
+  height: 50%;
+  font-size: 40px;
+}
+
+.join-room-container input {
+  width: 50%;
+  border: none;
+  outline: none;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 100px;
+  color: rgb(46, 45, 45);
+  padding: 20px;
+}
+
+.join-room-buttons button {
+  width: 30%;
+  height: 30%;
+  margin-top: 100px;
+  margin-bottom: 50px;
+  margin-left: 10px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 20px;
+  background-color: rgb(255, 255, 255);
+  color: black;
+}

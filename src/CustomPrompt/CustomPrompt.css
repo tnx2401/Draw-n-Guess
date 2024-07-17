@@ -1,0 +1,68 @@
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  20%,
+  60% {
+    transform: translateX(-10px);
+  }
+  40%,
+  80% {
+    transform: translateX(10px);
+  }
+}
+
+.modal.shake {
+  animation: shake 0.5s;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal {
+  background: rgb(209, 172, 62);
+  color: aliceblue;
+  border-radius: 10px;
+  max-width: 30%;
+  height: 20%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  padding-right: 20px;
+}
+
+.modal h2 {
+  height: auto;
+}
+
+.modal p {
+  height: auto;
+}
+
+.modal-buttons {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.modal-buttons button {
+  width: 50px;
+  height: 50px;
+  border: none;
+  border-radius: 100%;
+  cursor: pointer;
+}
+
+.modal-buttons button:hover {
+  background: #ddd;
+}

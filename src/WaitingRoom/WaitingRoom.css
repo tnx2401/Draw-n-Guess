@@ -1,0 +1,124 @@
+.waiting-room-container {
+  position: absolute;
+  width: 70%;
+  height: 60%;
+  background-color: #96ac65;
+  color: white;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 30px;
+  display: flex;
+}
+
+
+.id-container {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.744);
+  color: black;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+}
+
+.id-container p {
+  height: auto;
+  text-align: center;
+}
+
+.id-container h1{ 
+  font-size: 70px;
+  width: 60%;
+  height: auto;
+  background-color: rgb(47, 192, 143);
+  border-radius: 30px;
+  color: white;
+  text-align: center;
+}
+
+.id-container h3, h4 {
+  text-align: center;
+  height: auto;
+}
+.id-container button {
+  margin-top: 100px;
+  width: 50%;
+  height: 10%;
+  border-radius: 30px;
+  border: none;
+  color: rgb(255, 231, 231);
+  font-size: 20px;
+  background-color: rgba(255, 0, 0, 0.769);
+  cursor: pointer;
+}
+
+.players-container {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  width: 100%;
+  background-color: rgba(0, 255, 255, 0.325);
+  padding-left: 20px;
+  padding-top: 20px;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
+.players-temp-container {
+  width: 95%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  overflow-y: auto;
+}
+
+
+.player {
+  width: 45%;
+  display: flex;
+  height: 100px;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  border-radius: 20px;
+  margin: 10px;
+}
+
+.player img {
+  width: 100px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.player-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.player-info h3 {
+  height: 1px;
+  /* width: 90%; */
+}
+.players-container h2 {
+  height: auto;
+}
+
+.join-game-button-container {
+  width: 95%;
+  height: 30%; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.join-game-button-container button {
+  width: 40%;
+  height: 40%;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
